@@ -1,0 +1,27 @@
+//code in c 
+
+#include <stdio.h>
+int main() {
+    int X; 
+    printf("Enter the amount of water Chef drank today (in ml): ");
+    scanf("%d", &X);
+    
+    if (X < 2000) {
+        printf("Chef is not following doctor's advice. Please drink more water.\n");
+    } else {
+        printf("Chef followed doctor's advice. Well done!\n");
+    }
+    
+    return 0;
+}
+
+#code in python
+
+water_drank = int(input("enter amount of water chef drank today (in ml):"))
+if water_drank<2000:
+  print("chef is not following doctors advice,please drink more water")
+elif water_drank>2000:
+  
+  print("chef is following doctors advice,well done!!")
+
+
