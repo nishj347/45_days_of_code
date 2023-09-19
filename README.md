@@ -1,22 +1,4 @@
 # 45_days_of_code
 
-def max_chocolates(t, test_cases):
-    results = []
-    for test_case in test_cases:
-        x, y, z = test_case
-        max_chocolates = 0
-        if x * 5 + y * 10 >= z:
-            max_chocolates = (x * 5 + y * 10) // z
-        results.append(max_chocolates)
-        return results
-t = int(input())  # Number of test cases
-test_cases = []
-
-for _ in range(t):
-    x, y, z = map(int, input().split())
-    test_cases.append((x, y, z))
-results = max_chocolates(t, test_cases)
-for result in results:
-    print(result)
 
    
