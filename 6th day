@@ -1,0 +1,8 @@
+
+def calculate_minimum_cars(N):
+    return (N + 3) // 4  # Use integer division to round up
+T = int(input())
+for _ in range(T):
+    N = int(input())
+    cars_required = calculate_minimum_cars(N)
+    print(cars_required)
