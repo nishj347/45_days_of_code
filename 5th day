@@ -1,0 +1,11 @@
+
+def is_battery_low(X):
+    return X <= 15
+T = int(input())
+for _ in range(T):
+    X = int(input())
+    if is_battery_low(X):
+        print("Yes")
+    else:
+        print("No")
+
