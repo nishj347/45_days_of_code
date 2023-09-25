@@ -1,0 +1,11 @@
+def max_people_can_bath(X, Y):
+    buckets_filled = X // Y
+    max_people = buckets_filled // 2
+    return max_people
+
+T = int(input())
+
+for _ in range(T):
+    X, Y = map(int, input().split())
+    result = max_people_can_bath(X, Y)
+    print(result)
