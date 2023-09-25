@@ -1,0 +1,12 @@
+def is_spam(following, followers):
+    if following > 10 * followers:
+        return "YES"
+    else:
+        return "NO"
+
+T = int(input())
+
+for _ in range(T):
+    X, Y = map(int, input().split())
+    result = is_spam(X, Y)
+    print(result)
