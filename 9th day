@@ -1,0 +1,11 @@
+T = int(input())
+
+for _ in range(T):
+    X, Y = map(int, input().split())
+    
+    max_months = Y // X
+    
+    if max_months * X < Y:
+        print(max_months)
+    else:
+        print(0)
