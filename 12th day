@@ -1,0 +1,14 @@
+def can_get_funded(A, B, X, Y):
+    required_power = A * B
+    available_power = X * Y
+    if available_power >= required_power:
+        return "Yes"
+    else:
+        return "No"
+
+T = int(input())
+
+for _ in range(T):
+    A, B, X, Y = map(int, input().split())
+    result = can_get_funded(A, B, X, Y)
+    print(result)
