@@ -1,0 +1,15 @@
+def calculate_bullet_fire_time(bullet_speed, goomba_distance, min_time):
+    time_to_reach_goomba = goomba_distance / bullet_speed
+    if time_to_reach_goomba >= min_time:
+        return 0
+    else:
+        return min_time - time_to_reach_goomba
+
+test_case_1 = calculate_bullet_fire_time(3, 3, 5)
+print("Test case 1:", test_case_1)
+
+test_case_2 = calculate_bullet_fire_time(2, 4, 1)
+print("Test case 2:", test_case_2)
+
+test_case_3 = calculate_bullet_fire_time(3, 12, 8)
+print("Test case 3:", test_case_3)
